@@ -55,8 +55,8 @@ class FingerCounter:
     def segment_hand(self, frame, threshold=25):
         diff = cv2.absdiff(self.background.astype('uint8'), frame)
         thresholded_frame = cv2.threshold(diff, threshold, 255, cv2.THRESH_BINARY)[1]
+        
         contours = cv2.findContours(thresholded_frame.copy(), cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)[0]
-
         if len(contours) == 0:
             return None
 
@@ -100,7 +100,6 @@ class FingerCounter:
         # Grab contours in circle ROI
         contours = cv2.findContours(circular_roi.copy(), cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_NONE)[0]
 
-
         # Loop through the contours to count any fingers
         count = 0
         for cnt in contours:            
@@ -116,7 +115,6 @@ class FingerCounter:
                 count += 1
 
         return count
-
 
     def run(self):
         n_frames = 0
