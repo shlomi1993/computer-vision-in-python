@@ -2,13 +2,9 @@
 
 This repository is a comprehensive, hands-on learning collection for mastering computer vision using Python. It combines well-organized Jupyter Notebooks for guided exploration with OpenCV and deep learning, alongside a practical project: a real-time finger counting application using your webcam.
 
----
-
 ## 🙌 Credits
 
 This repository is based on the excellent [Pierian Data](https://www.pieriantraining.com/) computer vision curriculum, enhanced with personal projects and extensions.
-
----
 
 ## 📁 Repository Structure
 
@@ -18,8 +14,6 @@ computer-vision-in-python/
 ├── finger_counter_app/    # Practical application: Finger Counter
 ├── README.md              # You're here!
 ```
-
----
 
 ## 📘 Learning Notebooks
 
@@ -64,8 +58,6 @@ The `cv_notebook` folder is structured like a course and divided into the follow
 
 * Finger counting using contour analysis and convex hulls
 
----
-
 ## 🖐️ Finger Counter App
 
 This is a webcam-based real-time **Finger Counter** using OpenCV.
@@ -88,8 +80,6 @@ python finger_counter_app/finger_counter.py
 
 Press **Esc** to exit the window.
 
----
-
 ## 🛠️ Requirements
 
 Install all dependencies using one of the provided environment files:
@@ -99,8 +89,6 @@ conda env create -f cvcourse_macos.yml  # or cvcourse_linux.yml / cvcourse_windo
 conda activate cvcourse
 ```
 
----
-
 ## 📂 Dataset & Assets
 
 All necessary media and model files are included under the `DATA/` and `06-YOLOv3/` directories:
@@ -108,8 +96,6 @@ All necessary media and model files are included under the `DATA/` and `06-YOLOv
 * Images and videos for exercises
 * Haar cascades and pretrained models
 * Custom-trained Keras `.h5` models for classification tasks
-
----
 
 ## 👁️ YOLOv3 Object Detection
 
